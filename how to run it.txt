@@ -1,0 +1,28 @@
+Step-1: Make sure you have python and xampp installed on your device. If not, download and install from Google.
+
+Step-2: Install required libraries: You need to install the following Python libraries using pip. Just open command prompt and enter below command:
+
+(1) instagram-private-api: A Python wrapper for the Instagram API.
+
+	pip install instagram-private-api
+
+(2) google-api-python-client: For interacting with the Google Sheets API.
+
+	pip install google-api-python-client
+
+(3) gspread: A library for working with Google Sheets.
+
+	pip install gspread
+
+(4) pip install oauth2client
+
+(5) pip install mysql-connector-python
+
+
+Step-3: Open the XAMPP control panel and start Apache and MySQL. After that open your browser and type in search bar http://localhost/phpmyadmin and then click on enter and after going there click on new button in left corner and then put database name which is instagram_follower_tracker and then type create button. After that you will see a new database is created to store data.
+
+Step-4: Change the four variables INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD, COMPETITOR_USERNAME, and GOOGLE_SHEETS_CREDENTIALS to your liking.
+
+Step-5: Open command prompt in your project folder and then type the following command and hit enter after typing:
+
+	python main_script_with_server.py
